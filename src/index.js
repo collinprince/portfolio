@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { DatePicker } from 'antd';
-import 'antd/dist/antd.css';
-import ProjectCard from './components/project-card'
+// import { DatePicker } from 'antd';
+// // import 'antd/dist/antd.css';
+// import ProjectCard from './components/project-card';
+// import CardHolder from './components/card-holder.js';
 
 ReactDOM.render(
-  <ProjectCard/>,
+  <App/>,
   document.getElementById('root'),
 )
 
