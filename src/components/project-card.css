@@ -1,0 +1,9 @@
+.project {
+    border-style: solid;
+    border-color: blue;
+    border-radius: 4px;
+    width: 200px;
+    height: 300px;
+    font-size: 3rem;
+    text-align: center;
+}
