@@ -21,6 +21,7 @@ class CardHolder extends React.Component {
     renderCard(newKey, nameVal, text) {
         return (
             <ProjectCard 
+            bgColor = {this.props.bgColor}
             key={newKey}
             onClick={() => this.handleClick(text)}
             name={nameVal}

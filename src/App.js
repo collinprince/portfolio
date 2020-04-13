@@ -5,6 +5,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import MobileNav from './components/mobile-nav.js'
 import ProjectPage from './components/pages/projects.js';
 import ExperiencePage from './components/pages/experience.js';
+import EducationPage from './components/pages/education.js';
+import AboutPage from './components/pages/about.js';
 
 // function App() {
 //   return (
@@ -41,8 +43,6 @@ class App extends React.Component {
     this.resize();
   }
 
-
-
   resize() {
     let isSmall = this.state.small;
     if (window.innerWidth > 755) {
@@ -76,19 +76,23 @@ class App extends React.Component {
       return (<ProjectPage />);
     } else if (i === 1) {
       return (<ExperiencePage />);
+    } else if (i === 3) {
+      return (<EducationPage />);
+    } else if (i === 4) {
+      return (<AboutPage />);
     } else {
-      return null;
+      return (<AboutPage />);
     }
   }
 
   render() {
     return(
-      <Container style={{margin: "0", padding: "0", width: "100%", maxWidth: "none", fontFamily: "'Montserrat', sans-serif", height: "100%", backgroundColor: "#f6f7eb"}}>
+      <Container style={pageStyles}>
         <Row style={{height: "100%", marginLeft: 0, marginRight: 0}}>
           <Col sm={3} style={{padding: "0"}}>
             {this.renderNav()}
           </Col>
-          <Col sm={9} style={{height: "100vh"}}>
+          <Col sm={9} style={{height: this.state.small ? "auto" : "100vh"}}>
             {this.renderPage()}
           </Col>
         </Row>
@@ -99,9 +103,14 @@ class App extends React.Component {
 
 
 
-// const pageStyles = {
-//   width: '95vw',
-//   margin: '1vh 2.5vw',
-// }
+const pageStyles = {
+  margin: "0", 
+  padding: "0", 
+  width: "100%", 
+  maxWidth: "none", 
+  fontFamily: "'Montserrat', sans-serif", 
+  height: "100%", 
+  backgroundColor: "#f6f7eb",
+}
 
 export default App;

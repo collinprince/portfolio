@@ -26,7 +26,7 @@ class MobileNav extends React.Component {
                     </button>
                 </div>
                 <div style={navItemStyle}>
-                    <button style={navButtonStyle} onClick={()=> this.props.onClick(3)}>
+                    <button style={navButtonStyle} onClick={()=> this.props.onClick(4)}>
                         About Me
                     </button>
                 </div>

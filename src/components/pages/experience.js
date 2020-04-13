@@ -3,7 +3,7 @@ import CardHolder from '../card-holder.js';
 
 function ExperiencePage() {
     return(
-        <CardHolder cards={pairs} />
+        <CardHolder cards={pairs} bgColor="#35CE8D" />
     )
 }
 

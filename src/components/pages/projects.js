@@ -4,7 +4,7 @@ import CardHolder from '../card-holder.js';
 
 function ProjectPage() {
     return(
-        <CardHolder cards={projectCardPairs} />
+        <CardHolder cards={projectCardPairs} bgColor="#ED8642"/>
     )
 }
 

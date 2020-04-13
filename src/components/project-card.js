@@ -39,7 +39,7 @@ class ProjectCard extends React.Component {
             height: this.state.mobile ? "30%" : "40% ",
             transitionDuration: ".2s",            
             borderRadius: "10px",
-            backgroundColor: "#ed8642",
+            backgroundColor: this.props.bgColor,
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',

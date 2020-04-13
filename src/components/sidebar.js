@@ -1,5 +1,8 @@
 import React from 'react'
 import prof from '../assets/prof.png'
+import Resume from '../assets/CollinPrince_Resume.pdf';
+import LinkedIn from '../assets/linkedin.png';
+import GitHub from '../assets/github.png';
 
 class SideBar extends React.Component {
     constructor(props) {
@@ -62,7 +65,9 @@ class SideBar extends React.Component {
             listStyleType: "none",
             paddingLeft: "0",
             height: "100%",
-            
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between"
         }
         
         
@@ -74,6 +79,9 @@ class SideBar extends React.Component {
                 </div>
                 <div style={listContainer}>
                     <ol style={listStyle} >
+                        <li style={welcomeStyle}>
+                                Hi! I'm Collin Prince. Welcome to my website!        
+                        </li>
                         <li style={listItemStyle}>
                             <div style={divListItem}>
                                 <button style={buttonStyle} onClick={()=> this.props.onClick(0)}>
@@ -90,9 +98,11 @@ class SideBar extends React.Component {
                         </li>
                         <li style={listItemStyle}>
                             <div style={divListItem}>
-                                <button style={buttonStyle} onClick={()=> this.props.onClick(2)}>
-                                    Resume
-                                </button>
+                                <a href={Resume} target="_blank">
+                                    <button style={buttonStyle} onClick={()=> this.props.onClick(2)}>
+                                            Resume
+                                    </button>
+                                </a>
                             </div>
                         </li>                        
                         <li style={listItemStyle}>
@@ -104,13 +114,22 @@ class SideBar extends React.Component {
                         </li>
                         <li style={listItemStyle}>
                             <div style={divListItem}>
-                                <button style={buttonStyle} onClick={()=> this.props.onClick(3)}>
+                                <button style={buttonStyle} onClick={()=> this.props.onClick(4)}>
                                     About Me
                                 </button>
                             </div>
                         </li>
+                        <li style={listItemStyle}>
+                            <div style={linksList}>
+                                <a href="https://www.github.com/ciege99"style={linkItem}>
+                                    <img style={linkItemPic} src={GitHub}/>
+                                </a>
+                                <a href="https://linkedin.com/in/collinprince1" style={linkItem}>
+                                    <img style={linkItemPic} src={LinkedIn}/>
+                                </a>
+                            </div>
+                        </li>
                     </ol>
-
                 </div>
             </div>
 
@@ -118,8 +137,13 @@ class SideBar extends React.Component {
     }
 }
 
+const welcomeStyle = {
+    textAlign: "center",
+    marginTop: "1vh",
+}
+
 const listItemStyle = {
-    height: "19%",
+    height: "15%",
     marginTop: "1vh",
     textAlign: "center",
     display: "flex",
@@ -143,6 +167,25 @@ const buttonStyle = {
     color: "black",
 }
 
+const linksList = {
+    height: '100%',
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center'
+}
+
+const linkItem = {
+    height: '100%',
+    width: '15%',
+    marginLeft: '5%',
+    marginRight: '5%',
+}
+
+const linkItemPic = {
+    height: '100%',
+    width: '100%',
+}
 
 
 export default SideBar;
