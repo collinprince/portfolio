@@ -1,11 +1,9 @@
 import React from 'react';
-import Background from '../logo.svg'
 
 class ProjectCard extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            clicked: false,
             hovered: false,
             mobile: true,
         };
@@ -29,7 +27,7 @@ class ProjectCard extends React.Component {
     }
 
     resize() {
-        let curMobile = (window.innerWidth <= 400);
+        let curMobile = (window.innerWidth <= 500);
         if (curMobile !== this.state.mobile) {
             this.setState({mobile: curMobile});
         }
@@ -38,29 +36,28 @@ class ProjectCard extends React.Component {
     render() {
         const cardStyle = {
             width: this.state.mobile ? "40%" : "30%",
-            height: "300px",
-            transitionDuration: ".2s",
-            borderStyle: "solid",
-            borderColor: "blue", 
+            height: this.state.mobile ? "30%" : "40% ",
+            transitionDuration: ".2s",            
             borderRadius: "10px",
-            backgroundImage : `url(${Background})`,
+            backgroundColor: "#ed8642",
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
             transform: this.state.hovered ? 'scale(1.1)' : 'scale(1)',
             margin: "1%",
+            marginTop: "2.5%",
         }
         // cardStyle.transform = this.state.hovered ? "scale(1.1)" : "scale(1)";
 
         return (
             <div 
             style={cardStyle} 
-            onClick={()=> this.handleClick()}
+            onClick={()=> this.props.onClick()}
             onMouseEnter={()=> this.handleHover(true)}
             onMouseLeave={()=> this.handleHover(false)}
             >
                 <div style={titleStyle}>
-                    <h2 style={textStyle}>Project Name</h2>
+                    <h2 style={textStyle}>{this.props.name}</h2>
                 </div>
             </div>
         )
@@ -90,7 +87,7 @@ const titleStyle = {
 const textStyle = {
     background: "rgb(204, 204, 204, 0.5)",
     textAlign: "center",
-    width: "80%",
+    width: "95%",
     opacity: "1",
     padding: "1%",
 }

@@ -9,7 +9,7 @@ import * as serviceWorker from './serviceWorker';
 // import CardHolder from './components/card-holder.js';
 
 ReactDOM.render(
-  <App/>,
+  <App style={{height: "100%",}}/>,
   document.getElementById('root'),
 )
 
