@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.5f361e03.chunk.css",
+    "main.js": "/portfolio/static/js/main.f54929f6.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f54929f6.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.d597d31e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.d597d31e.js.map",
+    "static/js/2.aeeb6567.chunk.js": "/portfolio/static/js/2.aeeb6567.chunk.js",
+    "static/js/2.aeeb6567.chunk.js.map": "/portfolio/static/js/2.aeeb6567.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.d8131baead15337aa8c594421540c58c.js": "/portfolio/precache-manifest.d8131baead15337aa8c594421540c58c.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/portfolio/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.aeeb6567.chunk.js.LICENSE.txt": "/portfolio/static/js/2.aeeb6567.chunk.js.LICENSE.txt",
+    "static/media/CollinPrince_Resume.pdf": "/portfolio/static/media/CollinPrince_Resume.41c06210.pdf",
+    "static/media/campus.jpg": "/portfolio/static/media/campus.a81e282c.jpg",
+    "static/media/getty.jpg": "/portfolio/static/media/getty.56a13d55.jpg",
+    "static/media/linkedin.png": "/portfolio/static/media/linkedin.ec68112f.png",
+    "static/media/prof.png": "/portfolio/static/media/prof.fcb02df7.png",
+    "static/media/sit.jpg": "/portfolio/static/media/sit.58b50ddf.jpg",
+    "static/media/sm.jpg": "/portfolio/static/media/sm.64f26e0d.jpg",
+    "static/media/steps.jpg": "/portfolio/static/media/steps.458f463c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d597d31e.js",
+    "static/js/2.aeeb6567.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.f54929f6.chunk.js"
+  ]
+}
