@@ -1,4 +1,5 @@
 import React from 'react';
+import Resume from '../assets/CollinPrince_Resume.pdf';
 
 class MobileNav extends React.Component {
 
@@ -16,9 +17,12 @@ class MobileNav extends React.Component {
                     </button>
                 </div>
                 <div style={navItemStyle}>
-                    <button style={navButtonStyle} onClick={()=> this.props.onClick(2)}>
+                <a href={Resume} >
+                        <button style={navButtonStyle}  onClick={()=> this.props.onClick(2)}>
                         Resume
-                    </button>
+                        </button>
+                        </a>
+                    
                 </div>
                 <div style={navItemStyle}>
                     <button style={navButtonStyle} onClick={()=> this.props.onClick(3)}>

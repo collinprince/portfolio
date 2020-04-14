@@ -98,7 +98,7 @@ class SideBar extends React.Component {
                         </li>
                         <li style={listItemStyle}>
                             <div style={divListItem}>
-                                <a href={Resume} target="_blank">
+                                <a href={Resume} >
                                     <button style={buttonStyle} onClick={()=> this.props.onClick(2)}>
                                             Resume
                                     </button>

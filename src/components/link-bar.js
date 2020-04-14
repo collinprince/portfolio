@@ -6,10 +6,10 @@ function LinkBar() {
     return(
         <div style={linksList}>
             <a href="https://www.github.com/ciege99"style={linkItem}>
-                <img style={linkItemPic} src={GitHub}/>
+                <img alt='Github' style={linkItemPic} src={GitHub}/>
             </a>
             <a href="https://linkedin.com/in/collinprince1" style={linkItem}>
-                <img style={linkItemPic} src={LinkedIn}/>
+                <img alt='LinkedIn' style={linkItemPic} src={LinkedIn}/>
             </a>
         </div>
     );

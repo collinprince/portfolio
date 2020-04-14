@@ -1,5 +1,4 @@
 import React from 'react';
-import {Col} from 'react-bootstrap';
 // import MyPicture from '../assets/sit.jpg'
 
 class PicText extends React.Component {
@@ -78,7 +77,7 @@ class PicText extends React.Component {
         return(
             <div style={bigContainer}>
                 <div style={imgBoxStyle}>
-                    <img src={this.props.picture} style={picStyle}/>
+                    <img src={this.props.picture} alt='Me sitting' style={picStyle}/>
                 </div>
                 <div style={textBoxStyle}>
                     {this.state.small ? null : this.renderTitle()}
