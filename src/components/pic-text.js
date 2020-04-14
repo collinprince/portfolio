@@ -76,6 +76,7 @@ class PicText extends React.Component {
 
         return(
             <div style={bigContainer}>
+                {this.state.small ? this.renderTitle() : null}
                 <div style={imgBoxStyle}>
                     <img src={this.props.picture} alt='Me sitting' style={picStyle}/>
                 </div>

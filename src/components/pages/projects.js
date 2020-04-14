@@ -12,8 +12,8 @@ function ProjectPage() {
 //possible: eca400
 //
 
-const proj1 = 'I built this site as an update to a previous attempt at making a personal site. '
-+ 'I built this site using React, a first attempt at tlearning the framework for myself. '
+const proj1 = 'I built this site using React, a first attempt at learning the framework for myself. '
++ 'I previously made a personal site, but was unsatisfied with the look of the site and thought this would be a fun update to make.'
 + 'I built my old website using Angular, and it has been an eye opening and hugely beneficial experience for myself. ' 
 + 'I personally really love React after building this site, but I am happy to have experience with both Angular and React under my belt.'
 

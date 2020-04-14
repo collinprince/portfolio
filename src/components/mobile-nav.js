@@ -17,12 +17,11 @@ class MobileNav extends React.Component {
                     </button>
                 </div>
                 <div style={navItemStyle}>
-                <a href={Resume} >
-                        <button style={navButtonStyle}  onClick={()=> this.props.onClick(2)}>
-                        Resume
+                    <a href={Resume} style={{height: "80%"}}>
+                        <button style={resumeButtonStyle}  onClick={()=> this.props.onClick(2)}>
+                            Resume
                         </button>
-                        </a>
-                    
+                    </a>
                 </div>
                 <div style={navItemStyle}>
                     <button style={navButtonStyle} onClick={()=> this.props.onClick(3)}>
@@ -66,6 +65,17 @@ var navButtonStyle = {
     backgroundColor: "white",
     width: "100%",
     height: "80%",
+    color: "black",
+    fontSize: "1rem"
+}
+
+const resumeButtonStyle = {
+    border: "solid gray 1px",
+    borderRadius: "5px",
+    //backgroundColor: "#16c988",
+    backgroundColor: "white",
+    width: "100%",
+    height: "100%",
     color: "black",
     fontSize: "1rem"
 }
