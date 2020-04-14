@@ -33,7 +33,7 @@ class EducationPage extends React.Component {
 
         return(
             <div style={{backgroundColor: '#f6f7eb'}}>
-                <div style={{marginTop: "5%",}}>
+                <div style={{marginTop: "2vh",}}>
                     <PhotoCollage />
                 </div>
                 <div style={textBoxStyle}>

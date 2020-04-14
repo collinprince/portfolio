@@ -27,7 +27,7 @@ class ProjectCard extends React.Component {
     }
 
     resize() {
-        let curMobile = (window.innerWidth <= 500);
+        let curMobile = (window.innerWidth <= 600);
         if (curMobile !== this.state.mobile) {
             this.setState({mobile: curMobile});
         }
@@ -47,7 +47,6 @@ class ProjectCard extends React.Component {
             margin: "1%",
             marginTop: "2.5%",
         }
-        // cardStyle.transform = this.state.hovered ? "scale(1.1)" : "scale(1)";
 
         return (
             <div 
@@ -64,16 +63,6 @@ class ProjectCard extends React.Component {
     }
 }
 
-// function smallerThan400() {
-//     if (document.getElementById('root').clientWidth < 400) {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
-
-
-
 const titleStyle = {
     display: "flex",
     flexDirection: "row",
@@ -82,6 +71,7 @@ const titleStyle = {
     textAlign: "center", 
     width: "100%", 
     height: "20%", 
+    wordWrap: "break-word",
 }
 
 const textStyle = {
@@ -91,13 +81,5 @@ const textStyle = {
     opacity: "1",
     padding: "1%",
 }
-
-// function getCardWidth() {
-//     if (window.innerWidth < 400) {
-//         return "50%";
-//     } else {
-//         return "25%";
-//     }
-// }
 
 export default ProjectCard;

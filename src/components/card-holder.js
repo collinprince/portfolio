@@ -7,6 +7,7 @@ class CardHolder extends React.Component {
         super(props);
         this.state = {
             text: '',
+            mobile: false,
         };
     }
 
@@ -27,16 +28,25 @@ class CardHolder extends React.Component {
             name={nameVal}
             />
         );
-    
     }
 
-    
+    componentDidMount() {
+        window.addEventListener("resize", this.resize.bind(this));
+        this.resize();
+    }
+
+    resize() {
+        let curMobile = (window.innerWidth <= 500);
+        if (curMobile !== this.state.mobile) {
+            this.setState({mobile: curMobile});
+        }
+    }
+
 
     render() {
         return (
-            <div style={{height: "100vh"}}>
+            <div style={{height: "auto", minHeight: "100vh"}}>
                 <div style={holderStyles} >
-                    
                     {this.props.cards.map((elem, index) => this.renderCard(index, elem.name, elem.text))}
                 </div>
                 <div style={displayText}>
@@ -49,7 +59,7 @@ class CardHolder extends React.Component {
 
 const holderStyles = {
     width: "100%",
-    height: "68%",
+    height: "68vh",
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
@@ -59,8 +69,9 @@ const holderStyles = {
 
 const displayText = {
     width: "100%",
-    height: "30%",
-    // marginTop: "2%",
+    height: "auto",
+    marginTop: "3vh",
+    marginBottom: "3vh",
     textAlign: "center",
     fontSize: "2rem",
 }

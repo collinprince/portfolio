@@ -1,8 +1,7 @@
 import React from 'react'
 import prof from '../assets/prof.png'
 import Resume from '../assets/CollinPrince_Resume.pdf';
-import LinkedIn from '../assets/linkedin.png';
-import GitHub from '../assets/github.png';
+import LinkBar from './link-bar.js';
 
 class SideBar extends React.Component {
     constructor(props) {
@@ -27,7 +26,8 @@ class SideBar extends React.Component {
     render() {
         const outerStyles = {
             paddingLeft: "0",
-            height: this.state.mobile ? "100vh" : "100vh",
+            height: "100vh",
+            minHeight: "100vh",
             width: "100%",
     //        backgroundColor: "#c6c6c6",
             display: "flex",
@@ -120,14 +120,7 @@ class SideBar extends React.Component {
                             </div>
                         </li>
                         <li style={listItemStyle}>
-                            <div style={linksList}>
-                                <a href="https://www.github.com/ciege99"style={linkItem}>
-                                    <img style={linkItemPic} src={GitHub}/>
-                                </a>
-                                <a href="https://linkedin.com/in/collinprince1" style={linkItem}>
-                                    <img style={linkItemPic} src={LinkedIn}/>
-                                </a>
-                            </div>
+                            <LinkBar />
                         </li>
                     </ol>
                 </div>
@@ -167,25 +160,7 @@ const buttonStyle = {
     color: "black",
 }
 
-const linksList = {
-    height: '100%',
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center'
-}
-
-const linkItem = {
-    height: '100%',
-    width: '15%',
-    marginLeft: '5%',
-    marginRight: '5%',
-}
-
-const linkItemPic = {
-    height: '100%',
-    width: '100%',
-}
+ 
 
 
 export default SideBar;
