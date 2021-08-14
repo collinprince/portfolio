@@ -5,7 +5,7 @@ import GitHub from '../assets/github.png';
 function LinkBar() {
     return(
         <div style={linksList}>
-            <a href="https://www.github.com/ciege99"style={linkItem}>
+            <a href="https://www.github.com/collinprince" style={linkItem}>
                 <img alt='Github' style={linkItemPic} src={GitHub}/>
             </a>
             <a href="https://linkedin.com/in/collinprince1" style={linkItem}>
