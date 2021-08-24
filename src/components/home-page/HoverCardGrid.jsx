@@ -43,7 +43,7 @@ const HoverCardGrid = () => {
   return (
     <Grid container className={classes.root}>
       {hoverCardInfo.map((obj) => (
-        <Grid item key={obj.title} md={5} xs={10} className={classes.gridItem}>
+        <Grid item key={obj.title} md={5} xs={12} className={classes.gridItem}>
           <Link to={obj.path} className={classes.link}>
             <HoverCard title={obj.title} className={classes.card} />
           </Link>

@@ -17,10 +17,12 @@ const useStyles = makeStyles(() => ({
     justifyContent: "center",
     textAlign: "center",
     minHeight: "5vh",
+    marginRight: "0",
   },
   link: {
     color: "black",
     textDecoration: "none",
+    margin: "0",
   },
 }));
 
@@ -28,11 +30,11 @@ const BackButton = () => {
   const classes = useStyles();
   return (
     <Grid className={classes.root}>
-      <Link to="/" className={classes.link}>
-        <Grid item xs={3} sm={1} className={classes.rectangle}>
+      <Grid item xs={3} sm={1} className={classes.rectangle}>
+        <Link to="/" className={classes.link}>
           <div>Back</div>
-        </Grid>
-      </Link>
+        </Link>
+      </Grid>
     </Grid>
   );
 };
