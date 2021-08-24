@@ -50,7 +50,7 @@ const ContactBar = () => {
   const classes = useStyles();
   return (
     <Grid container className={classes.root}>
-      <Grid item xs={5} md={2} className={classes.rectangle}>
+      <Grid item xs={6} md={2} className={classes.rectangle}>
         {contactLinks.map((obj) => (
           <Grid item key={obj.key} className={classes.gridItem}>
             {obj.type === "site" ? (
